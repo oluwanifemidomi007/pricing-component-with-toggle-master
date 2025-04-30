@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(240, 78%, 98%);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 25px;
+  margin-top: 0.8em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: hsl(237, 63%, 64%);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px hsl(237, 63%, 64%);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.annual-monthly-container {
+  display: flex;
+  margin-left: 48em;
+  gap: 2em;
+  font-size: 12px;
+}
+
+#price1,
+#price2,
+#price3 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.annually,
+.monthly {
+  color: hsl(234, 14%, 74%);
+}
+
+h1 {
+  color: hsl(233, 13%, 49%);
+}
+
+.svg-top-1 {
+  width: 25%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-bottom-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1em;
+}
+
+.monthly-1 {
+  background-color: white;
+  padding: 2em;
+  width: 20%;
+  border-radius: 0.8em;
+  position: relative;
+}
+
+.monthly-3 {
+  background-color: white;
+  padding: 2em;
+  width: 20%;
+  border-radius: 0.8em;
+  position: relative;
+}
+
+.monthly-2 {
+  background-color: hsl(237, 63%, 64%);
+  padding: 2em;
+  border-radius: 0.8em;
+  width: 20%;
+  color: white;
+  position: relative;
+}
+
+.price-con {
+  margin-left: 16em;
+  display: flex;
+}
+
+.button1,
+.button2,
+.button3 {
+  width: 100%;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+}
+
+.button2:hover {
+  background-color: hsl(237, 63%, 64%);
+  color: white;
+  cursor: pointer;
+}
+
+.button2 {
+  color: hsl(237, 63%, 64%);
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.button1:hover,
+.button3:hover {
+  background-color: white;
+  color: hsl(237, 63%, 64%);
+  cursor: pointer;
+}
+
+.button1,
+.button3 {
+  background-color: hsl(237, 63%, 64%);
+  columns: white;
+  border: 1px solid hsl(237, 63%, 64%);
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .monthly-1 {
+    width: 50%;
+  }
+  .price-con {
+    display: block;
+    margin-left: 5em;
+  }
+  .monthly-2 {
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 22em;
+  }
+  .monthly-3 {
+    width: 50%;
+  }
+
+  .button1,
+  .button2,
+  .button3 {
+    width: 100%;
+  }
+  .svg-bottom-1 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+
+  .annual-monthly-container {
+    width: 110%;
+    margin-left: 7em;
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  input:checked + .slider {
+    background-color: hsl(237, 63%, 64%);
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px hsl(237, 63%, 64%);
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
