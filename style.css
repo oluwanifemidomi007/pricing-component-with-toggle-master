@@ -177,7 +177,7 @@ h1 {
   }
   .annual-monthly-container {
     width: 78%;
-    margin-left: 10.5em;
+    margin-left: 7.5em;
   }
   .price-con {
     display: block;
@@ -185,8 +185,8 @@ h1 {
   .monthly-1,
   .monthly-2,
   .monthly-3 {
-    width: 130%;
-    margin-left: -9em;
+    width: 400%;
+    margin-left: -10.5em;
   }
   .monthly-2 {
     margin-top: 2em;
